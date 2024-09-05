@@ -40,7 +40,10 @@ export const Head = () => (
       name="description"
       content="Best Computer offers comprehensive IT training courses to help you advance your career. Learn from industry experts and gain hands-on experience in various IT fields."
     />
-    <meta name="image" content="/og-image.jpg" />
+    <meta
+      name="image"
+      content="https://bestcomputer.netlify.app/og-image.jpg"
+    />
   </>
 );
 
