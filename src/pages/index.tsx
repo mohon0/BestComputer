@@ -33,6 +33,15 @@ const IndexPage = () => {
   );
 };
 
-export const Head = () => <title>Home Page</title>;
+export const Head = () => (
+  <>
+    <title>Best Computer Training Center</title>
+    <meta
+      name="description"
+      content="Best Computer offers comprehensive IT training courses to help you advance your career. Learn from industry experts and gain hands-on experience in various IT fields."
+    />
+    <meta name="image" content="/og-image.jpg" />
+  </>
+);
 
 export default IndexPage;
