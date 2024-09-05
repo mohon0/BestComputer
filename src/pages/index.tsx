@@ -44,6 +44,10 @@ export const Head = () => (
       name="image"
       content="https://bestcomputer.netlify.app/og-image.jpg"
     />
+    <meta
+      name="og:image"
+      content="https://bestcomputer.netlify.app/og-image.jpg"
+    />
   </>
 );
 
