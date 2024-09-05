@@ -35,4 +35,5 @@ collections:
           widget: "file",
           media_library: { allow_multiple: false },
           required: true,
+          validate: { max_size: 5120000 },
         }
