@@ -10,9 +10,7 @@ interface NoticeNode {
     title: string;
     date: string;
     description?: string;
-    pdf: {
-      publicURL: string;
-    };
+    pdf: string;
   };
 }
 
@@ -25,9 +23,7 @@ const Notice: React.FC = () => {
           frontmatter {
             title
             date(formatString: "MMMM DD, YYYY")
-            pdf {
-              publicURL
-            }
+            pdf
           }
         }
       }
@@ -57,9 +53,9 @@ const Notice: React.FC = () => {
                   <div key={notice.id} className="flex items-baseline gap-2">
                     <GoTriangleRight className="text-primary-100" />
                     <a
-                      href={notice.frontmatter.pdf.publicURL}
+                      href={notice.frontmatter.pdf}
+                      target="__blank"
                       className="text-gray-500 transition-all duration-200 hover:text-black hover:underline"
-                      download
                     >
                       {notice.frontmatter.title}
                     </a>

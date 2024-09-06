@@ -8,9 +8,7 @@ interface NoticeNode {
     title: string;
     date: string;
     description: string;
-    pdf: {
-      publicURL: string;
-    };
+    pdf: string;
   };
 }
 
@@ -40,8 +38,8 @@ const NoticeIndex: React.FC<PageProps<NoticesData>> = ({ data }) => {
                 className="rounded-md bg-white p-6 shadow-md transition-all duration-200 hover:bg-gray-50"
               >
                 <a
-                  href={notice.frontmatter.pdf.publicURL}
-                  download
+                  href={notice.frontmatter.pdf}
+                  target="_blank"
                   className="text-2xl font-semibold text-blue-600 hover:underline"
                 >
                   {notice.frontmatter.title}
@@ -64,9 +62,7 @@ export const query = graphql`
         frontmatter {
           title
           date(formatString: "MMMM DD, YYYY")
-          pdf {
-            publicURL
-          }
+          pdf
         }
       }
     }

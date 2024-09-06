@@ -10,8 +10,8 @@ collections:
     label: "Notice"
     folder: "content/notice"
     create: true
-    slug: "{{unique_id}}"
-    path: "{{unique_id}}/index"
+    slug: "{{slug}}"
+    path: "{{slug}}.md"
     editor:
       preview: false
     fields:
@@ -22,18 +22,4 @@ collections:
           widget: "datetime",
           required: true,
         }
-      - {
-          label: "Unique Identifier",
-          name: "unique_id",
-          widget: "string",
-          default: "{{uuid}}",
-          required: true,
-        }
-      - {
-          label: "PDF",
-          name: "pdf",
-          widget: "file",
-          media_library: { allow_multiple: false },
-          required: true,
-          validate: { max_size: 5120000 },
-        }
+      - { label: "Pdf", name: "pdf", widget: "string", required: true }
