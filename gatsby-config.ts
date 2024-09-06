@@ -4,7 +4,7 @@ const config: GatsbyConfig = {
   siteMetadata: {
     title: `Best Computer Training Center`,
     discription: `Best Computer offers comprehensive IT training courses to help you advance your career. Learn from industry experts and gain hands-on experience in various IT fields.`,
-    siteUrl: `https://bestcomputer.netlify.app`,
+    siteUrl: `https://bestcomputerjhe.online`,
     image: `/og-image.jpg`,
   },
   graphqlTypegen: true,

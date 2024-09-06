@@ -1,6 +1,5 @@
 import { Link } from "gatsby";
 import React from "react";
-import { FiSearch } from "react-icons/fi";
 import img from "../../../images/green.jpg";
 import Menu from "./Menu";
 import Navigation from "./Navigation";
@@ -17,7 +16,7 @@ export default function MainHeader() {
     >
       <div className="mx-auto">
         <div className="item-center text-xs font-thin text-gray-200 md:justify-start">
-          Contact us on +930443093409
+          যোগাযোগ +8801989-491248
         </div>
         <div className="flex items-center justify-between">
           <Link to="/" className="text-lg font-bold text-white md:text-3xl">
@@ -25,7 +24,6 @@ export default function MainHeader() {
           </Link>
           <div className="hidden items-center gap-2 md:flex">
             <Navigation />
-            <FiSearch color="white" size={28} />
           </div>
           <Menu />
         </div>

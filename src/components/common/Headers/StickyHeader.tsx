@@ -1,6 +1,5 @@
 import { Link } from "gatsby";
 import React, { useEffect, useState } from "react";
-import { FiSearch } from "react-icons/fi";
 import img from "../../../images/green.jpg";
 import Menu from "./Menu";
 import Navigation from "./Navigation";
@@ -36,7 +35,7 @@ export default function StickyHeader() {
         backgroundRepeat: "repeat",
       }}
     >
-      <div className="mx-auto px-2 md:px-20">
+      <div className="mx-auto px-2 md:px-10">
         <div className="flex items-center justify-between">
           <Link
             to="/"
@@ -46,7 +45,6 @@ export default function StickyHeader() {
           </Link>
           <div className="hidden items-center gap-2 md:flex">
             <Navigation />
-            <FiSearch color="white" size={28} />
           </div>
           <Menu />
         </div>

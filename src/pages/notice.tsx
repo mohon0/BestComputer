@@ -24,7 +24,7 @@ const NoticeIndex: React.FC<PageProps<NoticesData>> = ({ data }) => {
   return (
     <Layout>
       <div className="container mx-auto p-4">
-        <h1 className="mb-8 text-center text-4xl font-bold">Notices</h1>
+        <h1 className="mb-8 text-center text-4xl font-bold">নোটিশ</h1>
         {notices.length === 0 ? (
           <div className="relative rounded border border-yellow-400 bg-yellow-100 px-4 py-3 text-center text-yellow-700">
             <strong className="font-bold">No Notices Found</strong>
@@ -35,12 +35,12 @@ const NoticeIndex: React.FC<PageProps<NoticesData>> = ({ data }) => {
             {notices.map((notice) => (
               <div
                 key={notice.id}
-                className="rounded-md bg-white p-6 shadow-md transition-all duration-200 hover:bg-gray-50"
+                className="rounded-md bg-white p-2 shadow-md transition-all duration-200 hover:bg-gray-50"
               >
                 <a
                   href={notice.frontmatter.pdf}
                   target="_blank"
-                  className="text-2xl font-semibold text-blue-600 hover:underline"
+                  className="text-xl font-semibold text-blue-600 hover:underline"
                 >
                   {notice.frontmatter.title}
                 </a>

@@ -6,6 +6,7 @@ type NavItem = {
   label: string;
   id: number;
   path: string;
+  isExternal?: boolean;
 };
 
 const normalizePath = (path: string) => {
@@ -21,7 +22,13 @@ const Navigation = () => {
     { id: 1, label: "হোমপেজ", path: "/" },
     { id: 2, label: "নোটিশ", path: "/notice" },
     { id: 3, label: "কোর্স সমূহ", path: "/course" },
-    { id: 4, label: "আবেদন করুন", path: "/application" },
+    {
+      id: 4,
+      label: "আবেদন করুন",
+      path: "https://freelancermohon.online/",
+      isExternal: true,
+    },
+    { id: 5, label: "রেজাল্ট", path: "/result" },
     { id: 5, label: "আমাদের সম্পর্কে", path: "/about" },
     { id: 6, label: "যোগাযোগ", path: "/contact" },
   ];
@@ -64,9 +71,15 @@ const Navigation = () => {
             }`}
             onMouseEnter={() => setHoveredIndex(index)}
           >
-            <Link to={item.path} className="p-4 py-2">
-              {item.label}
-            </Link>
+            {item.isExternal ? (
+              <Link to={item.path} target="__blank" className="p-4 py-2">
+                {item.label}
+              </Link>
+            ) : (
+              <Link to={item.path} className="p-4 py-2">
+                {item.label}
+              </Link>
+            )}
           </li>
         ))}
       </ul>

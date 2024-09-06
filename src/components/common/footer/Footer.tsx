@@ -26,7 +26,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="flex items-center justify-center bg-slate-950 py-4 text-center text-gray-400">
-        কপিরাইট © ২০২০  সর্বসত্ত্ব সংরক্ষিত
+        কপিরাইট © 2014 - {new Date().getFullYear()} সর্বসত্ত্ব সংরক্ষিত
       </div>
 
       <div className="absolute -top-52 left-0 flex w-full items-center justify-center md:-top-24">

@@ -1,4 +1,4 @@
-import { graphql, useStaticQuery } from "gatsby";
+import { Link, graphql, useStaticQuery } from "gatsby";
 import React from "react";
 import { GoTriangleRight } from "react-icons/go";
 import img1 from "../../../../images/bg_notice_board.png";
@@ -35,8 +35,12 @@ const Notice: React.FC = () => {
   return (
     <div className="mx-2 my-10 grid grid-cols-1 gap-10 md:mx-20 md:grid-cols-2">
       <div className="flex gap-10 overflow-hidden border bg-gradient-to-b from-gray-50 to-gray-200">
-        <img src={img1} alt="Notice Board Background" className="h-fit w-24" />
-        <div className="py-6">
+        <img
+          src={img1}
+          alt="Notice Board Background"
+          className="hidden h-fit w-24 md:block"
+        />
+        <div className="px-2 py-3 md:py-6">
           <p className="text-xl font-bold">নোটিশ বোর্ড</p>
           <div className="p-2">
             {notices.length === 0 ? (
@@ -63,6 +67,15 @@ const Notice: React.FC = () => {
                 ))}
               </div>
             )}
+
+            <div className="flex items-center justify-end">
+              <Link
+                to="/notice"
+                className="rounded border border-primary-100 px-3 py-1"
+              >
+                সব দেখুন
+              </Link>
+            </div>
           </div>
         </div>
       </div>

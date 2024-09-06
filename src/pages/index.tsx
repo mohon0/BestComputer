@@ -8,6 +8,7 @@ import Insights from "../components/route/home/insights/Insights";
 import Members from "../components/route/home/members/Members";
 import Notice from "../components/route/home/notice/Notice";
 import Payment from "../components/route/home/payment/Payment";
+import ScrollNotice from "../components/route/home/scrollnotice/ScrollNotice";
 import Services from "../components/route/home/services/Services";
 import Student from "../components/route/home/student/Student";
 import WhyUs from "../components/route/home/whyus/WhyUs";
@@ -19,6 +20,7 @@ const IndexPage = () => {
       <StickyHeader />
       <Header />
       <Slider />
+      <ScrollNotice />
       <Notice />
       <Courses />
       <Services />
@@ -40,13 +42,10 @@ export const Head = () => (
       name="description"
       content="Best Computer offers comprehensive IT training courses to help you advance your career. Learn from industry experts and gain hands-on experience in various IT fields."
     />
-    <meta
-      name="image"
-      content="https://bestcomputer.netlify.app/og-image.jpg"
-    />
+    <meta name="image" content="https://bestcomputerjhe.online/og-image.jpg" />
     <meta
       name="og:image"
-      content="https://bestcomputer.netlify.app/og-image.jpg"
+      content="https://bestcomputerjhe.online/og-image.jpg"
     />
   </>
 );
