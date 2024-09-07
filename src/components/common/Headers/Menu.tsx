@@ -55,7 +55,7 @@ export default function Menu() {
             <Link to="/">হোমপেজ</Link>
             <Link to="/notice">নোটিশ</Link>
             <Link to="/course">কোর্স সমূহ</Link>
-            <Link to="https://freelancermohon.online" target="__blank">
+            <Link to="https://freelancermohon.online/signin" target="__blank">
               আবেদন করুন
             </Link>
             <Link to="/about">আমাদের সম্পর্কে</Link>

@@ -14,13 +14,12 @@ export default function ScrollNotice() {
       </div>
       <Marquee
         pauseOnHover={true}
-        className="border-primary col-span-9 h-full border-y border-l border-r text-2xl font-bold md:border-l-0 lg:col-span-10"
+        className="border-primary col-span-9 h-full border-y border-l border-r font-bold md:border-l-0 md:text-2xl lg:col-span-10"
       >
-        আসসালামু আলাইকুমবেস্ট কম্পিউটার ট্রেনিং সেন্টারের পক্ষথেকে আপনাকে
-        স্বাগতম। বেস্ট কম্পিউটার ট্রেনিং সেন্টারের সকল নোটিশ পেতে ও আবেদন করতে
-        উপরে দেওয়া (Best Computer T.C) Navbar এ ক্লিক করুন। প্রয়োজনে সরাসরি
-        যোগাযোগ করুনঃ-রফি টাওয়ার (১০ তলা ভবনের ৪র্থ তলা),পায়রা চত্ত্বর ঝিনাইদহ।
-        মোবাইলঃ ০১৯৮৯-৪৯১২৪৮, ০১৭৯৯-৫৭৪৫৭০ ধন্যবাদ ।
+        সবাইকে দক্ষ করে গড়ে তোলায় আমাদের একমাত্র লক্ষ্য। ঝিনাইদহ শহরে একমাত্র
+        আমরাই আপনাদের সার্বক্ষণিক পাশে আছি। আপনাদের যে কোন সমস্যা জানাতে সরাসরি
+        চলে আসুন আমাদের অফিসে। ঠিকানাঃ রফি টাওয়ার (১০ তলা ভবনের ৪র্থ তলা) অথবা
+        কল করুনঃ 01989-491248, Gmail: bestcomputer.jhenaidah@gmail.com
       </Marquee>
     </div>
   );
