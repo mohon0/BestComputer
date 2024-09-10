@@ -47,6 +47,10 @@ export const Head = () => (
       name="og:image"
       content="https://bestcomputerjhe.online/og-image.jpg"
     />
+    <meta
+      name="google-site-verification"
+      content="fDSST-ZzkW8Udw4reRVW01CHTQKgtQGCq8goCUm0Vug"
+    />
   </>
 );
 
