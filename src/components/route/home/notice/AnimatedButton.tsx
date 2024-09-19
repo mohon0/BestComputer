@@ -5,7 +5,7 @@ const AnimatedButton = () => {
   return (
     <div className="flex flex-col items-center gap-10 md:flex-row">
       <Link
-        to="https://freelancermohon.online"
+        to="https://freelancermohon.online/signin"
         target="__blank"
         className="flex h-fit animate-pulse items-center gap-3 rounded-full border-4 bg-primary-100 px-8 py-4 text-lg text-white shadow-custom"
       >
