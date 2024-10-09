@@ -25,10 +25,10 @@ const Navigation = () => {
     {
       id: 4,
       label: "আবেদন করুন",
-      path: "https://freelancermohon.com/signin",
+      path: "https://www.freelancermohon.com/signin",
       isExternal: true,
     },
-    { id: 5, label: "রেজাল্ট", path: "/result" },
+    { id: 5, label: "রেজাল্ট", path: "https://www.freelancermohon.com/signin" },
     { id: 5, label: "আমাদের সম্পর্কে", path: "/about" },
     { id: 6, label: "যোগাযোগ", path: "/contact" },
   ];
