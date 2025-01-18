@@ -25,7 +25,7 @@ const Navigation = () => {
     {
       id: 4,
       label: "আবেদন করুন",
-      path: "https://www.freelancermohon.com/signin",
+      path: "https://mhngraphics.vercel.app/best-computer-training-center/application",
       isExternal: true,
     },
     { id: 5, label: "রেজাল্ট", path: "https://www.freelancermohon.com/signin" },
