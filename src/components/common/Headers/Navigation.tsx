@@ -28,7 +28,12 @@ const Navigation = () => {
       path: "https://mhngraphics.vercel.app/best-computer-training-center/application",
       isExternal: true,
     },
-    { id: 5, label: "রেজাল্ট", path: "https://www.freelancermohon.com/signin" },
+    {
+      id: 5,
+      label: "রেজাল্ট",
+      path: "https://mhngraphics.vercel.app/best-computer-training-center/application",
+      isExternal: true,
+    },
     { id: 5, label: "আমাদের সম্পর্কে", path: "/about" },
     { id: 6, label: "যোগাযোগ", path: "/contact" },
   ];
