@@ -25,13 +25,13 @@ const Navigation = () => {
     {
       id: 4,
       label: "আবেদন করুন",
-      path: "https://mhngraphics.vercel.app/best-computer-training-center/application",
+      path: "https://www.graphics.oylkka.com/best-computer-training-center/application",
       isExternal: true,
     },
     {
       id: 5,
       label: "রেজাল্ট",
-      path: "https://mhngraphics.vercel.app/best-computer-training-center/application",
+      path: "https://www.graphics.oylkka.com/best-computer-training-center/application",
       isExternal: true,
     },
     { id: 5, label: "আমাদের সম্পর্কে", path: "/about" },
