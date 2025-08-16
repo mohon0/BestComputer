@@ -20,7 +20,7 @@ const Navigation = () => {
 
   const navItems: NavItem[] = [
     { id: 1, label: "হোমপেজ", path: "/" },
-    { id: 2, label: "নোটিশ", path: "/notice" },
+    { id: 2, label: "নোটিশ", path: "https://www.graphics.oylkka.com/best-computer-training-center/notice" },
     { id: 3, label: "কোর্স সমূহ", path: "/course" },
     {
       id: 4,

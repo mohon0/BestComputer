@@ -1,36 +1,12 @@
-import { Link, graphql, useStaticQuery } from "gatsby";
+import { Link } from "gatsby";
 import React from "react";
-import { GoTriangleRight } from "react-icons/go";
 import img1 from "../../../../images/bg_notice_board.png";
 import AnimatedButton from "./AnimatedButton";
 
-interface NoticeNode {
-  id: string;
-  frontmatter: {
-    title: string;
-    date: string;
-    description?: string;
-    pdf: string;
-  };
-}
+
 
 const Notice: React.FC = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      allMarkdownRemark(sort: { frontmatter: { date: DESC } }, limit: 10) {
-        nodes {
-          id
-          frontmatter {
-            title
-            date(formatString: "MMMM DD, YYYY")
-            pdf
-          }
-        }
-      }
-    }
-  `);
-
-  const notices: NoticeNode[] = data.allMarkdownRemark.nodes;
+  
 
   return (
     <div className="mx-2 my-10 grid grid-cols-1 gap-10 md:mx-20 md:grid-cols-2">
@@ -43,35 +19,11 @@ const Notice: React.FC = () => {
         <div className="px-2 py-3 md:py-6">
           <p className="text-xl font-bold">নোটিশ বোর্ড</p>
           <div className="p-2">
-            {notices.length === 0 ? (
-              <div className="relative rounded border border-yellow-400 bg-yellow-100 px-4 py-3 text-center text-yellow-700">
-                <strong className="font-bold">No Notices Found</strong>
-                <span className="block sm:inline">
-                  {" "}
-                  Please check back later.
-                </span>
-              </div>
-            ) : (
-              <div className="space-y-2">
-                {notices.map((notice) => (
-                  <div key={notice.id} className="flex items-baseline gap-2">
-                    <GoTriangleRight className="text-primary-100" />
-                    <a
-                      href={notice.frontmatter.pdf}
-                      target="__blank"
-                      className="text-gray-500 transition-all duration-200 hover:text-black hover:underline"
-                    >
-                      {notice.frontmatter.title}
-                    </a>
-                  </div>
-                ))}
-              </div>
-            )}
-
             <div className="flex items-center justify-end">
               <Link
-                to="/notice"
+                to="https://www.graphics.oylkka.com/best-computer-training-center/notice"
                 className="rounded border border-primary-100 px-3 py-1"
+                target="__blank"
               >
                 সব দেখুন
               </Link>
