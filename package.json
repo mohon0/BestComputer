@@ -17,7 +17,6 @@
   },
   "dependencies": {
     "@mdx-js/react": "^2.3.0",
-    "@staticcms/app": "^4.3.0",
     "autoprefixer": "^10.4.20",
     "framer-motion": "^11.3.29",
     "gatsby": "^5.14.6",
