@@ -2,9 +2,9 @@ import type { GatsbyConfig } from "gatsby";
 
 const config: GatsbyConfig = {
   siteMetadata: {
-    title: `Best Computer Training Center`,
-    discription: `Best Computer offers comprehensive IT training courses to help you advance your career. Learn from industry experts and gain hands-on experience in various IT fields.`,
-    siteUrl: `https://bestcomputerjhe.online`,
+    title: `Oylkka IT & Training Center`,
+    discription: `Oylkka IT & Training Center offers comprehensive IT training courses to help you advance your career. Learn from industry experts and gain hands-on experience in various IT fields.`,
+    siteUrl: `https://www.it.oylkka.com/`,
     image: `/og-image.jpg`,
   },
   graphqlTypegen: true,

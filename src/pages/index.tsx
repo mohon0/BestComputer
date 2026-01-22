@@ -37,15 +37,15 @@ const IndexPage = () => {
 
 export const Head = () => (
   <>
-    <title>Best Computer Training Center</title>
+    <title>Oylkka IT & Training Center</title>
     <meta
       name="description"
-      content="Best Computer offers comprehensive IT training courses to help you advance your career. Learn from industry experts and gain hands-on experience in various IT fields."
+      content="Oylkka IT & Training Center offers comprehensive IT training courses to help you advance your career. Learn from industry experts and gain hands-on experience in various IT fields."
     />
-    <meta name="image" content="https://bestcomputerjhe.online/og-image.jpg" />
+    <meta name="image" content="https://www.it.oylkka.com/og-image.jpg" />
     <meta
       name="og:image"
-      content="https://bestcomputerjhe.online/og-image.jpg"
+      content="https://www.it.oylkka.com/og-image.jpg"
     />
     <meta
       name="google-site-verification"

@@ -21,11 +21,11 @@ const Notice: React.FC = () => {
           <div className="p-2">
             <div className="flex items-center justify-end">
               <Link
-                to="https://www.graphics.oylkka.com/best-computer-training-center/notice"
+                to="https://www.it.oylkka.com/best-computer-training-center/notice"
                 className="rounded border border-primary-100 px-3 py-1"
                 target="__blank"
               >
-                সব দেখুন
+              সকল নোটিশ
               </Link>
             </div>
           </div>

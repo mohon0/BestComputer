@@ -1,5 +1,5 @@
+import { useLocation } from "@reach/router";
 import React, { useRef, useState } from "react";
-import { useLocation } from "react-router-dom";
 
 type NavItem = {
   label: string;

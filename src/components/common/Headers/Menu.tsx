@@ -53,10 +53,10 @@ export default function Menu() {
             exit="exit"
           >
             <Link to="/">হোমপেজ</Link>
-            <Link to="https://www.graphics.oylkka.com/best-computer-training-center/notice">নোটিশ</Link>
+            <Link to="https://www.it.oylkka.com/best-computer-training-center/notice">নোটিশ</Link>
             <Link to="/course">কোর্স সমূহ</Link>
             <Link
-              to="https://www.graphics.oylkka.com/best-computer-training-center/application"
+              to="https://www.it.oylkka.com/best-computer-training-center/application"
               target="__blank"
             >
               আবেদন করুন

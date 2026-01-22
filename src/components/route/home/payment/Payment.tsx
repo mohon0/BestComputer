@@ -10,15 +10,15 @@ export default function Payment() {
       </div>
       <div className="grid grid-cols-2 gap-6 md:grid-cols-3 md:gap-20">
         <div className="flex flex-col items-center justify-center">
-          <img src={img} alt="" />
+          <img src={img} alt="bkash" className="w-40" />
           <p className="-mt-4">০১৭৯৯-৫৭৪৫৭০ (পার্সোনাল)</p>
         </div>
         <div className="flex flex-col items-center justify-center">
-          <img src={img1} alt="" />
+          <img src={img1} alt="nagad" className="w-40" />
           <p className="-mt-4">০১৭৯৯-৫৭৪৫৭০ (পার্সোনাল)</p>
         </div>
         <div className="flex flex-col items-center justify-center">
-          <img src={img} alt="" />
+          <img src={img} alt="bkash-image" className="w-40" />
           <p className="-mt-4">০১৭৭৯-১২০০২৩ (মার্চেন্ট)</p>
         </div>
       </div>

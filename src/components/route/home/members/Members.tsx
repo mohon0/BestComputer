@@ -17,7 +17,7 @@ export default function Members() {
 
 			<div className="grid gap-10 md:grid-cols-3">
 				<MembersModel name="মোঃ মোহন" title="পরিচালক" img={img1} />
-				<MembersModel name="মোঃ মাহবুব" title="অফিস সহকারি" img={img2} />
+				<MembersModel name="মোঃ মাহবুব" title="শিক্ষক" img={img2} />
 			</div>
 		</div>
 	);

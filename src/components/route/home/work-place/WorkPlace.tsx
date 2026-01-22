@@ -57,35 +57,35 @@ export default function WorkPlace() {
           <img
             src={img1}
             alt=""
-            className="flex h-20 w-full items-center justify-center object-scale-down"
+            className="flex h-16 w-full items-center justify-center object-scale-down"
           />
         </SwiperSlide>
         <SwiperSlide className="flex h-full items-center justify-center">
           <img
             src={img2}
             alt=""
-            className="flex h-20 w-full items-center justify-center object-scale-down"
+            className="flex h-16 w-full items-center justify-center object-scale-down"
           />
         </SwiperSlide>
         <SwiperSlide className="flex h-full items-center justify-center">
           <img
             src={img3}
             alt=""
-            className="flex h-20 w-full items-center justify-center object-scale-down"
+            className="flex h-12 w-full items-center justify-center object-scale-down"
           />
         </SwiperSlide>
         <SwiperSlide className="flex h-full items-center justify-center">
           <img
             src={img4}
             alt=""
-            className="flex h-20 w-full items-center justify-center object-scale-down"
+            className="flex h-12 w-full items-center justify-center object-scale-down"
           />
         </SwiperSlide>
         <SwiperSlide className="flex h-full items-center justify-center">
           <img
             src={img5}
             alt=""
-            className="flex h-20 w-full items-center justify-center object-scale-down"
+            className="flex h-12 w-full items-center justify-center object-scale-down"
           />
         </SwiperSlide>
       </Swiper>

@@ -1,6 +1,6 @@
-import slide1 from "../../../../images/hero/1.png";
 import slide2 from "../../../../images/hero/2.jpg";
 import slide3 from "../../../../images/hero/3.jpg";
+import slide1 from "../../../../images/icon.png";
 
 // Array of content corresponding to each image
 export const contentData = [
@@ -8,7 +8,7 @@ export const contentData = [
 		img: slide1,
 		title: "ওয়েল্কা ট্রেনিং সেন্টারের পক্ষ থেকে আপনাকে স্বাগতম",
 		description:
-			"ওয়েল্কা ট্রেনিং সেন্টার, রফি টাওয়ার (১০ তলা ভবনের ৪র্থ তলা) পায়রা চত্ত্বর, ঝিনাইদহ",
+			"ওয়েল্কা ট্রেনিং সেন্টার, রফি টাওয়ার (১০ তলা ভবনের ৫ম তলা) পায়রা চত্ত্বর, ঝিনাইদহ",
 	},
 	{
 		img: slide2,
