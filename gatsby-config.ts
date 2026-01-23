@@ -4,7 +4,7 @@ const config: GatsbyConfig = {
   siteMetadata: {
     title: `Oylkka IT & Training Center`,
     description: `Oylkka IT & Training Center offers comprehensive IT training courses to help you advance your career. Learn from industry experts and gain hands-on experience in various IT fields.`,
-    siteUrl: `https://www.it.oylkka.com/`,
+    siteUrl: `https://www.training.oylkka.com/`,
     image: `/og-image.jpg`,
   },
   graphqlTypegen: true,
