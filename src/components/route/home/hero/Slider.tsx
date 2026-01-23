@@ -1,6 +1,5 @@
 import { AnimatePresence, motion, wrap } from "framer-motion";
-import  React from "react";
-import { useCallback, useEffect, useMemo, useState } from "react";
+import React, { useCallback, useEffect, useMemo, useState } from "react";
 
 // Image imports
 import blue from "../../../../images/blue.jpg";
@@ -131,7 +130,7 @@ export const Slider: React.FC = () => {
 								transition={selectedContentVariant.image.transition}
 								src={contentData[imageIndex].img}
 								alt=""
-								className="mx-auto rounded-lg drop-shadow-2xl"
+								className="mx-auto rounded-lg shadow-2xl"
 							/>
 						</div>
 						<div className="flex flex-col gap-3 md:gap-20">

@@ -1,12 +1,13 @@
 import React, { ReactNode } from "react";
 import {
-	FaDribbble,
-	FaFacebookSquare,
-	FaPinterestSquare,
-	FaRss,
+  FaDribbble,
+  FaFacebookSquare,
+  FaPinterestSquare,
+  FaRss,
 } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { MdCall, MdEmail } from "react-icons/md";
+import Map from "./Map";
 
 // --- Types ---
 interface SocialLinkProps {
@@ -21,24 +22,8 @@ interface ContactItemProps {
   details: string[];
 }
 
-// --- Sub-components ---
 
-const Map: React.FC = () => {
-  return (
-    <section className="w-full h-[400px] overflow-hidden grayscale-[30%] hover:grayscale-0 transition-all duration-700">
-      <iframe
-        title="Location Map"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3663.8219463567115!2d89.1245!3d23.5414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDMyJzI5LjAiTiA4OcKwMDcnMjguMiJF!5e0!3m2!1sen!2sbd!4v1700000000000!5m2!1sen!2sbd"
-        width="100%"
-        height="100%"
-        style={{ border: 0 }}
-        allowFullScreen
-        loading="lazy"
-        referrerPolicy="no-referrer-when-downgrade"
-      ></iframe>
-    </section>
-  );
-};
+
 
 const ContactItem: React.FC<ContactItemProps> = ({ icon, title, details }) => (
   <div className="flex items-start gap-4 group">
