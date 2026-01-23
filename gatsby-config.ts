@@ -3,7 +3,7 @@ import type { GatsbyConfig } from "gatsby";
 const config: GatsbyConfig = {
   siteMetadata: {
     title: `Oylkka IT & Training Center`,
-    discription: `Oylkka IT & Training Center offers comprehensive IT training courses to help you advance your career. Learn from industry experts and gain hands-on experience in various IT fields.`,
+    description: `Oylkka IT & Training Center offers comprehensive IT training courses to help you advance your career. Learn from industry experts and gain hands-on experience in various IT fields.`,
     siteUrl: `https://www.it.oylkka.com/`,
     image: `/og-image.jpg`,
   },

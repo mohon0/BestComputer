@@ -37,16 +37,27 @@ const IndexPage = () => {
 
 export const Head = () => (
   <>
+    {/* Standard Meta Tags */}
     <title>Oylkka IT & Training Center</title>
     <meta
       name="description"
-      content="Oylkka IT & Training Center offers comprehensive IT training courses to help you advance your career. Learn from industry experts and gain hands-on experience in various IT fields."
+      content="Oylkka IT & Training Center offers comprehensive IT training courses to help you advance your career."
     />
-    <meta name="image" content="https://www.it.oylkka.com/og-image.jpg" />
-    <meta
-      name="og:image"
-      content="https://www.it.oylkka.com/og-image.jpg"
-    />
+
+    {/* Open Graph / Facebook */}
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.it.oylkka.com/" />
+    <meta property="og:title" content="Oylkka IT & Training Center" />
+    <meta property="og:description" content="Oylkka IT & Training Center offers comprehensive IT training courses." />
+    <meta property="og:image" content="https://www.it.oylkka.com/og-image.jpg" />
+
+    {/* Twitter */}
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Oylkka IT & Training Center" />
+    <meta name="twitter:description" content="Comprehensive IT training courses." />
+    <meta name="twitter:image" content="https://www.it.oylkka.com/og-image.jpg" />
+
+    {/* Verification */}
     <meta
       name="google-site-verification"
       content="fDSST-ZzkW8Udw4reRVW01CHTQKgtQGCq8goCUm0Vug"
