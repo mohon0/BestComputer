@@ -13,21 +13,21 @@ import Header from "@/components/layout/header";
 import StickyHeader from "@/components/layout/header/sticky-header";
 
 export default function Home() {
-	return (
-		<div className="overflow-x-hidden">
-			<StickyHeader />
-			<Header />
-			<Slider />
-			<ScrollNotice />
-			<Notice />
-			<Courses />
-			<Services />
-			<WhyUs />
-			<Insights />
-			<Members />
-			<Student />
-			<WorkPlace />
-			<Payment />
-		</div>
-	);
+  return (
+    <div className="overflow-x-hidden">
+      <StickyHeader />
+      <Header />
+      <Slider />
+      <ScrollNotice />
+      <Notice />
+      <Courses />
+      <Services />
+      <WhyUs />
+      <Insights />
+      <Members />
+      <Student />
+      <WorkPlace />
+      <Payment />
+    </div>
+  );
 }

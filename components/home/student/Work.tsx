@@ -12,59 +12,59 @@ import Image from "next/image";
 import { Autoplay, Pagination } from "swiper/modules";
 
 export default function Work() {
-	return (
-		<div className="space-y-4">
-			<div className="text-center text-3xl font-bold text-primary-100">
-				ছাত্রদের কাজ
-			</div>
-			<Swiper
-				breakpoints={{
-					340: {
-						slidesPerView: 2,
-						spaceBetween: 4,
-					},
-					640: {
-						slidesPerView: 2,
-						spaceBetween: 4,
-					},
-					768: {
-						slidesPerView: 2,
-						spaceBetween: 6,
-					},
-					1024: {
-						slidesPerView: 3,
-						spaceBetween: 6,
-					},
-				}}
-				pagination={{
-					clickable: true,
-				}}
-				autoplay={{
-					delay: 2500,
-					disableOnInteraction: false,
-				}}
-				modules={[Pagination, Autoplay]}
-				className="mySwiper"
-			>
-				<SwiperSlide>
-					<Image src={img1} alt="" />
-				</SwiperSlide>
-				<SwiperSlide>
-					<Image src={img1} alt="" />
-				</SwiperSlide>
-				<SwiperSlide>
-					<Image src={img1} alt="" />
-				</SwiperSlide>
-				<SwiperSlide>
-					<Image src={img1} alt="" />
-				</SwiperSlide>
-				<SwiperSlide>
-					<Image src={img1} alt="" />
-				</SwiperSlide>
-				<SwiperSlide>
-					<Image src={img1} alt="" />
-				</SwiperSlide>
-			</Swiper>
-		</div>
-	);
+  return (
+    <div className="space-y-4">
+      <div className="text-center text-3xl font-bold text-primary-100">
+        ছাত্রদের কাজ
+      </div>
+      <Swiper
+        breakpoints={{
+          340: {
+            slidesPerView: 2,
+            spaceBetween: 4,
+          },
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 4,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 6,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 6,
+          },
+        }}
+        pagination={{
+          clickable: true,
+        }}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        modules={[Pagination, Autoplay]}
+        className="mySwiper"
+      >
+        <SwiperSlide>
+          <Image src={img1} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image src={img1} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image src={img1} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image src={img1} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image src={img1} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image src={img1} alt="" />
+        </SwiperSlide>
+      </Swiper>
+    </div>
+  );
 }
