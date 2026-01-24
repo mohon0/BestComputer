@@ -7,6 +7,21 @@ import {
 	FaPalette,
 	FaUsers,
 } from "react-icons/fa";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+	title: "আমাদের সম্পর্কে - ওয়েল্কা ট্রেনিং সেন্টার | আপনার ক্যারিয়ার গড়ার বিশ্বস্ত প্রতিষ্ঠান",
+	description:
+		"ওয়েল্কা ট্রেনিং সেন্টার বাংলাদেশের শীর্ষস্থানীয় আইটি প্রশিক্ষণ কেন্দ্র। আমাদের লক্ষ্য আধুনিক প্রযুক্তি এবং ডিজিটাল দক্ষতা প্রদান করে শিক্ষার্থীদের ক্যারিয়ার গড়তে সহায়তা করা।",
+	keywords: [
+		"ওয়েল্কা ট্রেনিং সেন্টার সম্পর্কে",
+		"আমাদের আইটি প্রতিষ্ঠান",
+		"ওয়েল্কা মিশন ভিশন",
+		"সেরা আইটি ট্রেনিং",
+		"About Oylkka IT Training Center",
+		"IT training in Bangladesh",
+	],
+};
 
 export default function AboutPage() {
 	return (
