@@ -1,4 +1,4 @@
-# Welka Training Center Website
+# Oylkka Training Center Website
 
 This repository contains the source code for the official website of oylkka Training Center, an educational institute located in Jhenaidah, Bangladesh. The website serves as a comprehensive informational portal, showcasing the various professional courses and services offered, attracting prospective students, and facilitating easy communication and enrollment.
 
