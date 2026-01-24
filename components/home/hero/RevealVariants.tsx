@@ -30,4 +30,4 @@ export const revealVariants = [
     animate: { x: "100%", scale: 1 },
     transition: { duration: 1, ease: "easeInOut" },
   },
-];
+] as const;
