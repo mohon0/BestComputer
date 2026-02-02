@@ -1,6 +1,6 @@
-import logo from "@/assets/icon.png";
 import Image from "next/image";
 import Marquee from "react-fast-marquee";
+import logo from "@/assets/icon.png";
 
 export default function ScrollNotice() {
   return (

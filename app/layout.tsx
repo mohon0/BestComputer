@@ -1,4 +1,3 @@
-import Footer from "@/components/layout/footer";
 import type { Metadata, Viewport } from "next";
 import {
   Geist,
@@ -6,6 +5,7 @@ import {
   Love_Ya_Like_A_Sister,
   Noto_Sans_Bengali,
 } from "next/font/google";
+import Footer from "@/components/layout/footer";
 import "./globals.css";
 
 // Standard Fonts

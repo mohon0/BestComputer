@@ -56,14 +56,14 @@ export default function Menu() {
           >
             <Link href="/">হোমপেজ</Link>
             <Link
-              href="https://www.it.oylkka.com/best-computer-training-center/notice"
+              href="https://www.it.oylkka.com/oylkka-it-and-training-center/notice"
               target="__blank"
             >
               নোটিশ
             </Link>
             <Link href="/course">কোর্স সমূহ</Link>
             <Link
-              href="https://www.it.oylkka.com/best-computer-training-center/application"
+              href="https://www.it.oylkka.com/oylkka-it-and-training-center/application"
               target="__blank"
             >
               আবেদন করুন

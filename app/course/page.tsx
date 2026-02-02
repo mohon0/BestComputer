@@ -1,6 +1,6 @@
+import type { Metadata } from "next";
 import Courses from "@/components/home/courses/Courses";
 import MainHeader from "@/components/layout/header/main-header";
-import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "আমাদের কোর্সসমূহ - ওয়েল্কা ট্রেনিং সেন্টার | আইটি কোর্স ও প্রশিক্ষণ",
@@ -23,6 +23,7 @@ export default function CoursesPage() {
       <MainHeader />
       <script
         type="application/ld+json"
+        // biome-ignore lint/security/noDangerouslySetInnerHtml: this is fine
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",

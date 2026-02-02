@@ -1,4 +1,4 @@
-import MainHeader from "@/components/layout/header/main-header";
+import type { Metadata } from "next";
 import {
   FaAward,
   FaChartLine,
@@ -7,7 +7,7 @@ import {
   FaPalette,
   FaUsers,
 } from "react-icons/fa";
-import { Metadata } from "next";
+import MainHeader from "@/components/layout/header/main-header";
 
 export const metadata: Metadata = {
   title: "আমাদের সম্পর্কে - ওয়েল্কা ট্রেনিং সেন্টার | আপনার ক্যারিয়ার গড়ার বিশ্বস্ত প্রতিষ্ঠান",

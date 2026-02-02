@@ -1,6 +1,6 @@
 import NumberCounter from "number-counter";
-import React, { useState } from "react";
-import { IconType } from "react-icons";
+import { useState } from "react";
+import type { IconType } from "react-icons";
 import { useInView } from "react-intersection-observer";
 
 interface InsightsModelProps {
@@ -35,7 +35,6 @@ export default function InsightsModel({
     <div ref={ref} className="flex flex-col items-center justify-center gap-3">
       <div
         className={`rounded-full border-4 ${borderColor} ${bgColor} p-3 text-white`}
-        aria-label={`${label} Icon`}
       >
         <Icon size={30} />
       </div>

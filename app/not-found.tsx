@@ -1,5 +1,5 @@
-import MainHeader from "@/components/layout/header/main-header";
 import Link from "next/link";
+import MainHeader from "@/components/layout/header/main-header";
 
 export default function NotFoundPage() {
   return (
@@ -36,7 +36,7 @@ export default function NotFoundPage() {
                   clipRule="evenodd"
                 />
               </svg>
-              <>Return Home</>
+              Return Home
             </button>
           </Link>
         </div>

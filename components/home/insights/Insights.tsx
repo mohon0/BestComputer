@@ -1,8 +1,8 @@
 "use client";
-import SectionHeader from "@/components/animation/SectionHeader";
 import { FaCrown, FaUserCheck } from "react-icons/fa";
 import { FaSheetPlastic, FaUsers } from "react-icons/fa6";
 import { ImStatsDots } from "react-icons/im";
+import SectionHeader from "@/components/animation/SectionHeader";
 import InsightsModel from "./InsightsModel";
 
 export default function Insights() {

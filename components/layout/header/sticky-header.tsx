@@ -1,7 +1,7 @@
 "use client";
-import img from "@/assets/green.jpg";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import img from "@/assets/green.jpg";
 import Menu from "./menu";
 import Navigation from "./navigation";
 

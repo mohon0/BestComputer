@@ -1,7 +1,7 @@
-import img1 from "@/assets/bg_notice_board.png";
 import Image from "next/image";
 import Link from "next/link";
 import type React from "react";
+import img1 from "@/assets/bg_notice_board.png";
 import AnimatedButton from "./AnimatedButton";
 
 const Notice: React.FC = () => {
@@ -18,7 +18,7 @@ const Notice: React.FC = () => {
           <div className="p-2">
             <div className="flex items-center justify-end">
               <Link
-                href="https://www.it.oylkka.com/best-computer-training-center/notice"
+                href="https://www.it.oylkka.com/oylkka-it-and-training-center/notice"
                 className="rounded border border-primary-100 px-3 py-1"
                 target="__blank"
               >

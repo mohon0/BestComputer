@@ -1,6 +1,6 @@
-import MainHeader from "@/components/layout/header/main-header";
 import { FaEnvelope, FaPhone } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
+import MainHeader from "@/components/layout/header/main-header";
 
 export default function Contact() {
   return (

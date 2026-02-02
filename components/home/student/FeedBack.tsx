@@ -1,9 +1,9 @@
 "use client";
+import { Swiper, SwiperSlide } from "swiper/react";
 import img4 from "@/assets/feedback/adib.webp";
 import img3 from "@/assets/feedback/dipu.webp";
 import img2 from "@/assets/feedback/refa.webp";
 import img1 from "@/assets/feedback/towfiq.webp";
-import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";

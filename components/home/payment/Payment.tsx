@@ -1,6 +1,6 @@
+import Image from "next/image";
 import img from "@/assets/payment/BKash-bKash-Logo.wine.png";
 import img1 from "@/assets/payment/Nagad-Logo.wine.png";
-import Image from "next/image";
 
 export default function Payment() {
   return (

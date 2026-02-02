@@ -1,5 +1,4 @@
 "use client";
-import SectionHeader from "@/components/animation/SectionHeader";
 import { BsPersonWorkspace } from "react-icons/bs";
 import { CiGlobe } from "react-icons/ci";
 import { FaDigitalOcean } from "react-icons/fa6";
@@ -8,6 +7,7 @@ import { GiAutoRepair } from "react-icons/gi";
 import { GrAnnounce } from "react-icons/gr";
 import { LuNetwork } from "react-icons/lu";
 import { RiComputerLine } from "react-icons/ri";
+import SectionHeader from "@/components/animation/SectionHeader";
 import ServicesCard from "./ServicesCard";
 
 export default function Services() {

@@ -1,4 +1,6 @@
 "use client";
+import { motion } from "framer-motion";
+import { FaGraduationCap } from "react-icons/fa";
 import img7 from "@/assets/course/auto-cad.jpg";
 import img2 from "@/assets/course/Databasae-programing.jpg";
 import img3 from "@/assets/course/Digital-marketing.jpg";
@@ -8,8 +10,6 @@ import img1 from "@/assets/course/office-application.jpg";
 import img6 from "@/assets/course/Video-editing.jpg";
 import img5 from "@/assets/course/Webdesign-and-devlopment.jpg";
 import SectionHeader from "@/components/animation/SectionHeader";
-import { motion } from "framer-motion";
-import { FaGraduationCap } from "react-icons/fa";
 import CoursesModel from "./CoursesModel";
 
 export default function Courses() {

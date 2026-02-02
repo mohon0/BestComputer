@@ -26,19 +26,19 @@ const Navigation = () => {
       id: 2,
       label: "নোটিশ",
       isExternal: true,
-      path: "https://www.it.oylkka.com/best-computer-training-center/notice",
+      path: "https://www.it.oylkka.com/oylkka-it-and-training-center/notice",
     },
     { id: 3, label: "কোর্স সমূহ", path: "/course" },
     {
       id: 4,
       label: "আবেদন করুন",
-      path: "https://www.it.oylkka.com/best-computer-training-center/application",
+      path: "https://www.it.oylkka.com/oylkka-it-and-training-center/application",
       isExternal: true,
     },
     {
       id: 5,
       label: "রেজাল্ট",
-      path: "https://www.it.oylkka.com/best-computer-training-center/application",
+      path: "https://www.it.oylkka.com/oylkka-it-and-training-center/application",
       isExternal: true,
     },
     { id: 6, label: "আমাদের সম্পর্কে", path: "/about" }, // Fixed duplicate ID 5 to 6

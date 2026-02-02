@@ -1,10 +1,10 @@
 "use client";
+import { Swiper, SwiperSlide } from "swiper/react";
 import img2 from "@/assets/workplace/fff.png";
 import img1 from "@/assets/workplace/fiverr.png";
 import img3 from "@/assets/workplace/toptal.png";
 import img4 from "@/assets/workplace/upwork.png";
 import img5 from "@/assets/workplace/youtube.png";
-import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";

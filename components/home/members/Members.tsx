@@ -1,8 +1,8 @@
 "use client";
+import { FaUsers } from "react-icons/fa";
 import img2 from "@/assets/member/mahbub.jpg";
 import img1 from "@/assets/member/mohon.jpg";
 import SectionHeader from "@/components/animation/SectionHeader";
-import { FaUsers } from "react-icons/fa";
 import MembersModel from "./MembersModel";
 
 export default function Members() {
