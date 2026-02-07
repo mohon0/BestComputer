@@ -1,5 +1,6 @@
 import type React from "react";
 import type { IconType } from "react-icons";
+import { Card, CardContent, CardHeader } from "@/components/ui/card";
 
 interface ServicesCardProps {
   icon: IconType;
@@ -13,15 +14,19 @@ const ServicesCard: React.FC<ServicesCardProps> = ({
   description,
 }) => {
   return (
-    <div className="flex flex-col items-center justify-center gap-3 border p-4 text-center shadow-custom transition-all duration-300 hover:bg-gray-200">
-      <div className="text-primary-200">
-        <Icon size={60} />
-      </div>
-      <div className="text-xl font-bold text-primary-100 md:text-2xl">
-        {title}
-      </div>
-      <div className="text-sm text-gray-500">{description}</div>
-    </div>
+    <Card>
+      <CardHeader className="text-center flex items-center justify-center flex-col gap-2">
+        <div className="text-primary">
+          <Icon size={60} />
+        </div>
+        <div className="text-primary text-xl font-bold md:text-2xl">
+          {title}
+        </div>
+      </CardHeader>
+      <CardContent>
+        <div className="text-sm text-muted-foreground">{description}</div>
+      </CardContent>
+    </Card>
   );
 };
 

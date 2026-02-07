@@ -10,12 +10,10 @@ import Student from "@/components/home/student/Student";
 import WhyUs from "@/components/home/whyus/WhyUs";
 import WorkPlace from "@/components/home/work-place/WorkPlace";
 import Header from "@/components/layout/header";
-import StickyHeader from "@/components/layout/header/sticky-header";
 
 export default function Home() {
   return (
     <div className="overflow-x-hidden">
-      <StickyHeader />
       <Header />
       <Slider />
       <ScrollNotice />

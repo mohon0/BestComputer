@@ -48,7 +48,7 @@ export default function Menu() {
         {isOpen && (
           <motion.div
             id="menu-items"
-            className="absolute right-6 top-10 z-10 flex w-72 origin-top flex-col space-y-4 overflow-hidden rounded-lg bg-primary-100 px-10 py-5 text-white shadow-lg"
+            className="absolute right-6 top-10 z-10 flex w-72 origin-top flex-col space-y-4 overflow-hidden rounded-lg bg-primary px-10 py-5 text-white shadow-lg"
             variants={menuVariants}
             initial="hidden"
             animate="visible"

@@ -8,7 +8,6 @@ import {
 } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { MdCall, MdEmail } from "react-icons/md";
-import MapContent from "./map-content";
 
 // --- Types ---
 interface SocialLinkProps {
@@ -56,20 +55,10 @@ export default function Footer(): JSX.Element {
 
   return (
     <footer className="relative w-full">
-      {/* Map Section */}
-      <MapContent />
-
       {/* Footer Content Area */}
-      <div
-        className="relative bg-cover bg-center text-white"
-        style={{
-          backgroundImage: "url(/green.jpg)",
-          backgroundAttachment: "fixed",
-          backgroundRepeat: "repeat",
-        }}
-      >
+      <div className="relative bg-gray-900 text-white">
         {/* Dark Overlay */}
-        <div className="bg-linear-to-b from-black/80 via-black/85 to-black/95 backdrop-blur-[2px]">
+        <div>
           <div className="mx-auto max-w-6xl px-4 py-16">
             {/* Branding Section */}
             <div className="text-center mb-12">

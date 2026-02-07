@@ -1,4 +1,3 @@
-"use client";
 import { motion, type Variants } from "framer-motion";
 import type { IconType } from "react-icons";
 
@@ -68,7 +67,7 @@ export default function SectionHeader({
     >
       <motion.div
         variants={lineLeft}
-        className="text-2xl font-bold text-primary-100 md:text-4xl"
+        className="text-primary-100 text-2xl font-bold md:text-4xl"
       >
         {title}
       </motion.div>
@@ -76,18 +75,18 @@ export default function SectionHeader({
       <div className="flex items-center gap-4">
         <motion.div
           variants={lineLeft}
-          className="h-0.5 w-20 bg-gray-700"
+          className="h-0.5 w-20 bg-muted-foreground"
         ></motion.div>
         <motion.div variants={iconVariants} className="text-lg">
           <Icon />
         </motion.div>
         <motion.div
           variants={lineRight}
-          className="h-0.5 w-20 bg-gray-700"
+          className="h-0.5 w-20 bg-muted-foreground"
         ></motion.div>
       </div>
       {text && (
-        <motion.div variants={lineRight} className="text-gray-600">
+        <motion.div variants={lineRight} className="text-muted-foreground">
           {text}
         </motion.div>
       )}

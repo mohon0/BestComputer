@@ -1,94 +1,74 @@
 "use client";
-import { Swiper, SwiperSlide } from "swiper/react";
+import Image from "next/image";
+import { FaHandHoldingDollar } from "react-icons/fa6";
 import img2 from "@/assets/workplace/fff.png";
 import img1 from "@/assets/workplace/fiverr.png";
 import img3 from "@/assets/workplace/toptal.png";
 import img4 from "@/assets/workplace/upwork.png";
 import img5 from "@/assets/workplace/youtube.png";
-
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/pagination";
-
-import Image from "next/image";
-import { FaHandHoldingDollar } from "react-icons/fa6";
-import { Autoplay } from "swiper/modules";
-// import required modules
 import SectionHeader from "@/components/animation/SectionHeader";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 export default function WorkPlace() {
   return (
-    <div className="mx-2 space-y-4 md:mx-20">
+    <div className="mx-2 mt-16 space-y-4 md:mx-20">
       <SectionHeader
         title="ছাত্রদের কর্মক্ষেত্র"
         text="আপনি যদি সম্পূর্ণরূপে কাজ শিখে নিজেকে দক্ষ ভাবে তৈরি করতে পারেন তাহলে অবশ্যই বিভিন্ন মার্কেটপ্লেস এ কাজ করতে পারবেন।"
         icon={FaHandHoldingDollar}
       />
-      <Swiper
-        breakpoints={{
-          340: {
-            slidesPerView: 3,
-            spaceBetween: 20,
-          },
-          640: {
-            slidesPerView: 4,
-            spaceBetween: 20,
-          },
-          768: {
-            slidesPerView: 5,
-            spaceBetween: 30,
-          },
-          1024: {
-            slidesPerView: 5,
-            spaceBetween: 40,
-          },
+      <Carousel
+        opts={{
+          align: "center",
         }}
-        pagination={{
-          clickable: true,
-        }}
-        autoplay={{
-          delay: 2500,
-          disableOnInteraction: false,
-        }}
-        modules={[Autoplay]}
-        className="my-auto flex items-center justify-center"
+        className="w-full"
       >
-        <SwiperSlide className="flex h-full items-center justify-center">
-          <Image
-            src={img1}
-            alt=""
-            className="flex h-16 w-full items-center justify-center object-scale-down"
-          />
-        </SwiperSlide>
-        <SwiperSlide className="flex h-full items-center justify-center">
-          <Image
-            src={img2}
-            alt=""
-            className="flex h-16 w-full items-center justify-center object-scale-down"
-          />
-        </SwiperSlide>
-        <SwiperSlide className="flex h-full items-center justify-center">
-          <Image
-            src={img3}
-            alt=""
-            className="flex h-12 w-full items-center justify-center object-scale-down"
-          />
-        </SwiperSlide>
-        <SwiperSlide className="flex h-full items-center justify-center">
-          <Image
-            src={img4}
-            alt=""
-            className="flex h-12 w-full items-center justify-center object-scale-down"
-          />
-        </SwiperSlide>
-        <SwiperSlide className="flex h-full items-center justify-center">
-          <Image
-            src={img5}
-            alt=""
-            className="flex h-12 w-full items-center justify-center object-scale-down"
-          />
-        </SwiperSlide>
-      </Swiper>
+        <CarouselContent>
+          <CarouselItem className="basis-3/4 px-10 md:basis-1/5">
+            <Image
+              src={img1}
+              alt=""
+              className="flex h-20 w-full items-center justify-center object-scale-down"
+            />
+          </CarouselItem>
+          <CarouselItem className="basis-3/4 px-10 md:basis-1/5">
+            <Image
+              src={img2}
+              alt=""
+              className="flex h-20 w-full items-center justify-center object-scale-down"
+            />
+          </CarouselItem>
+          <CarouselItem className="basis-3/4 px-10 md:basis-1/5">
+            <Image
+              src={img3}
+              alt=""
+              className="flex h-20 w-full items-center justify-center object-scale-down"
+            />
+          </CarouselItem>
+          <CarouselItem className="basis-3/4 px-10 md:basis-1/5">
+            <Image
+              src={img4}
+              alt=""
+              className="flex h-20 w-full items-center justify-center object-scale-down"
+            />
+          </CarouselItem>
+          <CarouselItem className="basis-3/4 px-10 md:basis-1/5">
+            <Image
+              src={img5}
+              alt=""
+              className="flex h-20 w-full items-center justify-center object-scale-down"
+            />
+          </CarouselItem>
+        </CarouselContent>
+        <CarouselPrevious className="translate-x-10" />
+        <CarouselNext className="-translate-x-10" />
+      </Carousel>
     </div>
   );
 }

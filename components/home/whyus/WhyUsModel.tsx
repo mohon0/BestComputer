@@ -1,4 +1,5 @@
 import type { IconType } from "react-icons";
+import { Card, CardContent, CardHeader } from "@/components/ui/card";
 
 interface props {
   text: string;
@@ -7,12 +8,15 @@ interface props {
 
 export default function WhyUsModel({ text, icon: Icon }: props) {
   return (
-    <div className="flex h-48 flex-col items-center justify-center space-y-3 rounded bg-gray-200 p-4 text-center">
-      <div className="rounded-full border-4 border-gray-600 bg-primary-100 p-3 text-white">
-        <Icon size={30} />
-      </div>
-      <div className="text-xl font-semibold">{text}</div>
-      <div className="h-1 w-20 rounded-full bg-gray-600"></div>
-    </div>
+    <Card>
+      <CardHeader className="flex items-center justify-center">
+        <div className="flex items-center justify-center bg-primary/10 p-4 rounded-full">
+          <Icon size={30} className="text-primary" />
+        </div>
+      </CardHeader>
+      <CardContent>
+        <div className="text-xl font-semibold text-center">{text}</div>
+      </CardContent>
+    </Card>
   );
 }
