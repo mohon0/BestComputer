@@ -4,7 +4,7 @@ import Navigation from "./navigation";
 
 export default function Header() {
   return (
-    <div className="absolute top-0 z-50 w-full space-y-0 px-2 py-2 md:px-20">
+    <div className="absolute top-0 z-50 w-full space-y-0 px-2 py-2 md:px-12 shadow">
       <div className="item-center flex justify-center text-xs text-gray-200 md:justify-start">
         যোগাযোগ +8801989-491248
       </div>
@@ -17,7 +17,6 @@ export default function Header() {
         </div>
         <Menu />
       </div>
-      <div className="hidden h-1.5 rounded-full bg-white md:block"></div>
     </div>
   );
 }

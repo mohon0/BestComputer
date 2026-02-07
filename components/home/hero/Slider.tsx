@@ -10,7 +10,6 @@ import img2 from "@/assets/hero/2.jpg";
 import img3 from "@/assets/hero/3.jpg";
 import img1 from "@/assets/logo.png";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import {
   Carousel,
@@ -242,43 +241,15 @@ export const Slider: React.FC = () => {
             const animation = slideAnimations[index];
             return (
               <CarouselItem key={slide.title}>
-                <div className="relative h-240 w-full overflow-hidden rounded-b-2xl shadow-2xl md:h-200">
+                <div className="relative h-220 w-full overflow-hidden rounded-b-2xl shadow-2xl md:h-180">
                   {/* Theme-based Overlay */}
                   <div
                     className={`absolute inset-0 ${getThemeClasses(slide.theme)}`}
                   />
 
-                  {/* Animated Background Elements */}
-                  <div className="absolute inset-0 overflow-hidden">
-                    <motion.div
-                      className={`absolute -right-40 -top-40 h-80 w-80 rounded-full bg-linear-to-r ${slide.accentColor} opacity-20 blur-3xl`}
-                      animate={{
-                        scale: [1, 1.2, 1],
-                        rotate: [0, 180, 360],
-                      }}
-                      transition={{
-                        duration: 20,
-                        repeat: Number.POSITIVE_INFINITY,
-                        ease: "linear",
-                      }}
-                    />
-                    <motion.div
-                      className={`absolute -bottom-40 -left-40 h-80 w-80 rounded-full bg-linear-to-r ${slide.accentColor} opacity-10 blur-3xl`}
-                      animate={{
-                        scale: [1.2, 1, 1.2],
-                        rotate: [360, 180, 0],
-                      }}
-                      transition={{
-                        duration: 25,
-                        repeat: Number.POSITIVE_INFINITY,
-                        ease: "linear",
-                      }}
-                    />
-                  </div>
-
                   {/* Content */}
                   <div className="absolute inset-0 z-20 flex items-center">
-                    <div className="container mx-auto px-2 md:px-6">
+                    <div className=" mx-auto px-2 md:px-12">
                       <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
                         {/* Text Content */}
                         <div className="space-y-6 text-white">
@@ -393,33 +364,6 @@ export const Slider: React.FC = () => {
                               ))}
                             </motion.div>
                           )}
-
-                          <motion.div
-                            // biome-ignore lint: error
-                            key={`buttons-${index}`}
-                            initial={animation.buttons.initial}
-                            animate={
-                              current === index
-                                ? animation.buttons.animate
-                                : animation.buttons.initial
-                            }
-                            transition={animation.buttons.transition}
-                            className="flex flex-row gap-4"
-                          >
-                            <Button
-                              size="lg"
-                              variant="outline"
-                              className="border-white w-full bg-transparent text-white backdrop-blur-xs hover:bg-white hover:text-black"
-                            >
-                              আরও জানুন
-                            </Button>
-                            <Button
-                              size="lg"
-                              className={`bg-linear-to-r w-full ${slide.accentColor} font-semibold text-white shadow-lg hover:shadow-xl`}
-                            >
-                              শেখা শুরু করুন
-                            </Button>
-                          </motion.div>
                         </div>
 
                         {/* Image Content */}
@@ -442,9 +386,6 @@ export const Slider: React.FC = () => {
                               width={600}
                               height={400}
                               className="h-auto w-full object-cover"
-                            />
-                            <div
-                              className={`absolute inset-0 bg-linear-to-t ${slide.accentColor} opacity-20`}
                             />
                           </div>
                         </motion.div>
