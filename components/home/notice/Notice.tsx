@@ -181,7 +181,10 @@ export default function ModernNoticeBoard() {
                   <p className="mb-6 text-muted-foreground">
                     আপনার ভবিষ্যৎ গড়ুন আমাদের সাথে
                   </p>
-                  <Link href="/oylkka-it-and-training-center/application">
+                  <Link
+                    target="_blank"
+                    href="https://www.it.oylkka.com/oylkka-it-and-training-center/application"
+                  >
                     <Button className="w-full">আবেদন করুন</Button>
                   </Link>
                 </div>
@@ -198,7 +201,7 @@ export default function ModernNoticeBoard() {
                   <p className="mb-6 text-muted-foreground">
                     আপনার জ্ঞান পরীক্ষা করুন এবং নতুন কিছু শিখুন
                   </p>
-                  <Link href="/quiz">
+                  <Link target="_blank" href="https://www.it.oylkka.com/quiz">
                     <Button className="w-full">কুইজ খেলুন</Button>
                   </Link>
                 </div>
