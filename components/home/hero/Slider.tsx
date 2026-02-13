@@ -385,7 +385,7 @@ export const Slider: React.FC = () => {
                               alt=""
                               width={600}
                               height={400}
-                              className="h-auto w-full object-cover"
+                              className="h-68 md:h-auto w-full object-scale-down md:object-cover rounded-2xl"
                             />
                           </div>
                         </motion.div>
