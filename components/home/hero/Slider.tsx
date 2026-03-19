@@ -379,7 +379,9 @@ export const Slider: React.FC = () => {
                           transition={animation.image.transition}
                           className="relative"
                         >
-                          <div className="relative overflow-hidden rounded-2xl shadow-2xl">
+                          <div
+                            className={`relative overflow-hidden rounded-2xl shadow-2xl ${index === 0 ? "scale-80 p-4" : "scale-100 p-0"}`}
+                          >
                             <Image
                               src={slide.img || "/placeholder.svg"}
                               alt=""
