@@ -6,6 +6,7 @@ import {
   Noto_Sans_Bengali,
 } from "next/font/google";
 import Footer from "@/components/layout/footer";
+import ReactQueryProvider from "@/context/tanstack-query";
 import "./globals.css";
 
 // Standard Fonts
@@ -184,7 +185,9 @@ export default function RootLayout({
             }),
           }}
         />
-        <main className="min-h-screen">{children}</main>
+        <main className="min-h-screen">
+          <ReactQueryProvider>{children}</ReactQueryProvider>
+        </main>
         <Footer />
       </body>
     </html>

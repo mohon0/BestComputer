@@ -1,12 +1,13 @@
 import Courses from "@/components/home/courses/Courses";
-import { Slider } from "@/components/home/hero/Slider";
+import Hero from "@/components/home/hero/hero";
 import Insights from "@/components/home/insights/Insights";
 import Members from "@/components/home/members/Members";
 import Notice from "@/components/home/notice/Notice";
 import Payment from "@/components/home/payment/Payment";
 import ScrollNotice from "@/components/home/scrollnotice/ScrollNotice";
 import Services from "@/components/home/services/Services";
-import Student from "@/components/home/student/Student";
+import FeedBack from "@/components/home/student/FeedBack";
+import Gallery from "@/components/home/student/Gallery";
 import WhyUs from "@/components/home/whyus/WhyUs";
 import WorkPlace from "@/components/home/work-place/WorkPlace";
 import Header from "@/components/layout/header";
@@ -15,7 +16,7 @@ export default function Home() {
   return (
     <div className="overflow-x-hidden">
       <Header />
-      <Slider />
+      <Hero />
       <ScrollNotice />
       <Notice />
       <Courses />
@@ -23,7 +24,8 @@ export default function Home() {
       <WhyUs />
       <Insights />
       <Members />
-      <Student />
+      <FeedBack />
+      <Gallery />
       <WorkPlace />
       <Payment />
     </div>

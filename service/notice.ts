@@ -12,7 +12,7 @@ export function useNotice(page: number = 1, pageSize: number = 10) {
       setIsLoading(true);
       try {
         const response = await axios.get(
-          `https://www.it.oylkka.com/api/notice?page=${page}&pageSize=${pageSize}`,
+          `https://it.oylkka.com/api/notice?page=${page}&pageSize=${pageSize}`,
         );
         setData(response.data);
         setError(null);
