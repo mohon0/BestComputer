@@ -1,31 +1,19 @@
+import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
-import { useEffect, useState } from "react";
+
+const apiClient = axios.create({
+  baseURL: "https://www.it.oylkka.com",
+  headers: { "Content-Type": "application/json" },
+});
 
 export function useNotice(page: number = 1, pageSize: number = 10) {
-  // biome-ignore lint/suspicious/noExplicitAny: this is fine
-  const [data, setData] = useState<any>(null);
-  const [isLoading, setIsLoading] = useState(true);
-  const [error, setError] = useState<Error | null>(null);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      setIsLoading(true);
-      try {
-        const response = await axios.get(
-          `https://it.oylkka.com/api/notice?page=${page}&pageSize=${pageSize}`,
-        );
-        setData(response.data);
-        setError(null);
-        // biome-ignore lint/suspicious/noExplicitAny: this is fine
-      } catch (err: any) {
-        setError(err);
-      } finally {
-        setIsLoading(false);
-      }
-    };
-
-    fetchData();
-  }, [page, pageSize]); // Re-runs whenever page or pageSize changes
-
-  return { data, isLoading, error };
+  return useQuery({
+    queryKey: ["notices", page, pageSize],
+    queryFn: async () => {
+      const response = await apiClient.get(
+        `/api/notice?page=${page}&pageSize=${pageSize}`,
+      );
+      return response.data;
+    },
+  });
 }
